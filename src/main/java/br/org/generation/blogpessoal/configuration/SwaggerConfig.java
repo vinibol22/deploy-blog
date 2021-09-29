@@ -38,7 +38,7 @@ public class SwaggerConfig {
 	public static ApiInfo metadata() {
 
 		return new ApiInfoBuilder()
-			.title("API - Blog Pessoal")
+			.title("API - Blog Pessoall")
 			.description("Projeto API Spring - Blog Pessoal")
 			.version("1.0.0")
 			.license("Apache License Version 2.0")
@@ -49,9 +49,11 @@ public class SwaggerConfig {
 
 	private static Contact contact() {
 
-		return new Contact("Vinicius Barreto", 
-			"https://github.com/vinibol22", 
-			"vinicius.vbb98@gmail.com");
+		return new Contact("Vinicius Barreto, Mayara Machado, Maicon Bonfim, Marcus Vinicius", 
+			"https://github.com/vinibol22,https://github.com/mayara008,https://github.com/maytech474,https://github.com/marcusvinicius21 "
+			
+			)
+;
 
 	}
 
