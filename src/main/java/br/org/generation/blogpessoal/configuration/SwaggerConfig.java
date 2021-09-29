@@ -49,11 +49,9 @@ public class SwaggerConfig {
 
 	private static Contact contact() {
 
-		return new Contact("Vinicius Barreto, Mayara Machado, Maicon Bonfim, Marcus Vinicius", 
-			"https://github.com/vinibol22,https://github.com/mayara008,https://github.com/maytech474,https://github.com/marcusvinicius21 "
-			
-			)
-;
+		return new Contact("Vinicius Barreto", 
+			"https://github.com/vinibol22", 
+			"vinicius.vbb98@gmail.com");
 
 	}
 
