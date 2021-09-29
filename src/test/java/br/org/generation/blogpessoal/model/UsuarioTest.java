@@ -1,5 +1,6 @@
 package br.org.generation.blogpessoal.model;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.time.LocalDate;
@@ -33,7 +34,7 @@ public class UsuarioTest {
 	public void start() {
 
 		LocalDate data = LocalDate.parse("2000-07-22", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-		usuario = new Usuario(0L, "João da Silva", "joao@email.com.br", "13465278", data);
+		usuario = new Usuario(0L, "João da Silva", "joao@email.com.br", "13465278", data, "admin", "foto");
 
 	}
 
@@ -55,10 +56,11 @@ public class UsuarioTest {
 		Set<ConstraintViolation<Usuario>> violacao = validator.validate(usuarioErro);
 		System.out.println(violacao.toString());
 
-		assertTrue(violacao.isEmpty());
+		assertFalse(violacao.isEmpty());
 	}
 
 }
+
 	
 	
 	
