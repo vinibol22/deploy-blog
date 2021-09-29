@@ -49,13 +49,15 @@ public class Usuario {
 	private List<Postagem> postagem;
 
 	
-	public Usuario(long id, String nome, String usuario, String senha, LocalDate dataNascimento) {
+	public Usuario(long id, String nome, String usuario, String senha, LocalDate dataNascimento,String foto,String tipo) {
 		
 		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.senha = senha;
 		this.dataNascimento = dataNascimento;
+		this.foto=foto;
+		this.tipo=tipo;
 		
 	}
 
